@@ -6,6 +6,12 @@ function send_post_request (x, page) {
 	});
 }
 
+function get_request (x, f) {
+	fetch(x).then(function (response) {
+		return response.json();
+	}).then(f);
+}
+
 var alphabet = "0123456789abcdef";
 function getID (x) {
 	var returnString = "";

@@ -20,4 +20,8 @@ public void addPlayer (String s) {
 	players.add(new Player (s));
 }
 
+public String getJSON () {
+	return "{}";
+}
+
 }

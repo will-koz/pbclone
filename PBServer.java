@@ -47,7 +47,7 @@ class PBHandler implements HttpHandler {
 				case index: response = PBStrings.index_html; break;
 				case css: response = PBStrings.index_css; break;
 				case js: response = PBStrings.index_js; break;
-				case game: response = "ggame"; break;
+				case game: response = game.getJSON(); break;
 			}
 			status = 200;
 		}
