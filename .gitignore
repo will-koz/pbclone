@@ -1,0 +1,8 @@
+# Ignore compiled java programs
+*.class
+
+# Ignore compiled java packages
+pb/
+
+# Automatically generated code:
+PBStrings.java
