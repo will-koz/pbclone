@@ -34,8 +34,24 @@ send_post_request(id, "join");
 
 // Set timer for being updated on game information
 setInterval(get_request, 100, "/game", (response) => {
-	document.getElementById("question").innerHTML = response.question;
+	if (response.question) document.getElementById("question").innerHTML = response.question;
 	if (response.progress) document.getElementById("progress").value = response.progress;
+	if (response.end) document.getElementById("time_left").innerHTML =
+		Math.max(0, (Date.now() - response.end) / (-1000));
+
+	if (response.players) {
+		response.players.sort((a, b) => a.score - b.score);
+		var tableHTML = "<tr><td></td><td>Name</td><td>Score</td></tr>";
+		for (var i = 0; i < response.players.length; i++) {
+			tableHTML += "<tr>";
+			tableHTML += "<td>" + (i + 1) + "</td>";
+			tableHTML += "<td>" + response.players[i].name + "</td>";
+			tableHTML += "<td>" + response.players[i].score + "</td>";
+			tableHTML += "</tr>";
+		}
+		document.getElementById("scoreboard").innerHTML = tableHTML;
+	}
+
 });
 
 // Set events for pausing, skipping, buzzing in
@@ -47,6 +63,9 @@ document.onkeydown = function (e) {
 	}
 
 	switch (e.keyCode) {
+		case 80: // the P key
+			send_post_request(id, "pause");
+			break;
 		case 83: // the S key
 			send_post_request(id, "skip");
 			break;

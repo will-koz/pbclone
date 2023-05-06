@@ -18,7 +18,7 @@ private Game game;
 private HttpContext index;
 private HttpServer server;
 
-enum Type { change_name, css, game, index, js, join, skip }
+enum Type { change_name, css, game, index, js, join, pause, skip }
 
 class PBHandler implements HttpHandler {
 	private Type type;
@@ -40,6 +40,7 @@ class PBHandler implements HttpHandler {
 			switch (type) {
 				case change_name: game.change_name(responseStringBuilder.toString()); break;
 				case join: game.addPlayer(responseStringBuilder.toString()); break;
+				case pause: game.toggle_pause(responseStringBuilder.toString()); break;
 				case skip: game.skip_question(responseStringBuilder.toString()); break;
 			}
 			status = 204;
@@ -77,6 +78,7 @@ public PBServer (Game _game) throws IOException {
 	// POST contexts
 	server.createContext("/change_name", new PBHandler(Type.change_name));
 	server.createContext("/join", new PBHandler(Type.join)); // New player provides ID
+	server.createContext("/pause", new PBHandler(Type.pause)); // Player wants to pause the question
 	server.createContext("/skip", new PBHandler(Type.skip)); // Player wants to skip a question
 
 	server.setExecutor(null); // I don't know what this does

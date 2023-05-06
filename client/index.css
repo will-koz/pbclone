@@ -1,12 +1,20 @@
 body {
 	background-color: #0a0a0a;
+	color: #f0f0f0;
+	font-family: sans-serif;
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
 }
 
+h1 {
+	text-align: left;
+}
+
 progress {
-	background-color: #00ff00;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
 	height: 30px;
 	width: 100%;
 }
@@ -20,6 +28,11 @@ progress {
 	width: 50%;
 }
 
+#scoreboard {
+	text-align: left;
+	width: 100%;
+}
+
 #side {
 	left: 70%;
 	padding: auto;
@@ -27,6 +40,10 @@ progress {
 	text-align: center;
 	top: 25px;
 	width: 20%;
+}
+
+#side tr:nth-child(even) {
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 .input {

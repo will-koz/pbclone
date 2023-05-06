@@ -1,7 +1,5 @@
 package pb;
 
-public class Question {
-
 enum Status {
 	buzzed, // Someone has buzzed in
 	complete, // The question has finished
@@ -9,10 +7,14 @@ enum Status {
 	running // The question is being asked / not complete
 }
 
+public class Question {
+
 private long start_date; // When the question is created / started
 private long adjusted_start_date; // Used for lerping between start and end; considering pauses
 private long end_of_question; // When the question is finished being posed
 private long end_date; // When the question cannot be answered any longer
+
+private long paused_date;
 
 private String correct_ans;
 private String[] words;
@@ -34,6 +36,8 @@ public Question (String ans, String question) {
 	end_date = end_of_question + (long) (seconds_after_question * 1000);
 }
 
+public long get_end_date () { return end_date; }
+
 public String get_public_question () {
 	int returnWords = (int) (Math.ceil(words.length * progress()));
 
@@ -44,10 +48,29 @@ public String get_public_question () {
 	return returnString.toString();
 }
 
+public Status get_status () {
+	if (status == Status.running && System.currentTimeMillis() > end_date) status = Status.complete;
+	return status;
+}
+
+public void pause () {
+	paused_date = System.currentTimeMillis();
+	status = Status.paused;
+}
+
 public double progress () {
+	if (status == Status.paused) return 0;
 	long time_since_start = System.currentTimeMillis() - adjusted_start_date;
 	long time_between = end_of_question - adjusted_start_date;
 	return Math.min(1.0, (double) time_since_start / (double) time_between);
+}
+
+public void unpause () {
+	status = Status.running;
+	long delta = System.currentTimeMillis() - paused_date;
+	adjusted_start_date += delta;
+	end_of_question += delta;
+	end_date += delta;
 }
 
 }

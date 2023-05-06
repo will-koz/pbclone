@@ -13,6 +13,8 @@ public Player (String _id) {
 }
 
 public String get_id () { return id; }
+public String get_name () { return name; }
+public int get_score () { return score; }
 
 public void set_name (String _name) { name = _name; }
 

@@ -30,13 +30,27 @@ public String getJSON () {
 
 	// Get question information
 	returnString.append("\"question\":\"");
-	if (current_question != null) {
+	if (current_question != null && current_question.get_status() != Status.paused) {
 		returnString.append(current_question.get_public_question()); // TODO make sure is escaped
-		returnString.append("\", \"progress\":" + Math.floor(current_question.progress() * 100));
+		returnString.append("\",\"progress\":" + Math.floor(current_question.progress() * 100));
+		returnString.append(",\"end\":" + current_question.get_end_date());
 	}
+	else if (current_question != null && current_question.get_status() == Status.paused)
+		returnString.append("\""); // Give no more information about the question
 	else returnString.append("waiting for the question to begin\"");
 
 	// Get player information
+	returnString.append(",\"players\":[");
+	for (int i = 0; i < players.size(); i++) {
+		if (i != 0) returnString.append(",{");
+		else returnString.append("{");
+
+		returnString.append("\"name\":\"" + players.get(i).get_name() + "\""); // TODO escaped
+		returnString.append(",\"score\":" + players.get(i).get_score());
+
+		returnString.append("}");
+	}
+	returnString.append("]");
 
 	returnString.append("}");
 	return returnString.toString();
@@ -47,6 +61,13 @@ public void skip_question (String player_id) {
 	current_question = new Question ("Lorem Ipsum",
 		"What is this sample text? This is some more padding. Some more filler text. (The answer is"
 		+ " Lorem Ipsum dolor sit amet.)");
+}
+
+public void toggle_pause (String s) {
+	// TODO disallow pauses with static variable, check valid playerid
+	System.out.println("Toggle pause request from " + s);
+	if (current_question.get_status() == Status.paused) current_question.unpause();
+	else if (current_question.get_status() == Status.running) current_question.pause();
 }
 
 public Player get_player (String player_id) {
