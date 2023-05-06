@@ -6,13 +6,25 @@ function send_post_request (x, page) {
 	});
 }
 
-// Join game
+var alphabet = "0123456789abcdef";
+function getID (x) {
+	var returnString = "";
+	for (var i = 0; i < x; i++)
+		returnString += alphabet[Math.floor(alphabet.length * Math.random())];
+	return returnString;
+}
 
+// Join game
 // Generate ID
-id = "super_secret_key";
-console.log(id);
+var id = "";
+if (sessionStorage.getItem("id")) id = sessionStorage.getItem("id");
+else {
+	id = getID(24);
+	sessionStorage.setItem("id", id);
+}
+console.log("ID: " + id);
 // Send post request to server
-var x = send_post_request(id, "join");
+send_post_request(id, "join");
 
 // Set timer for being updated on game information
 // Set events for pausing, skipping, buzzing in

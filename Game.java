@@ -16,7 +16,7 @@ public Game () {
 }
 
 public void addPlayer (String s) {
-	System.out.println("Got here.");
+	// TODO look up if player with this id exists
 	players.add(new Player (s));
 }
 
