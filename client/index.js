@@ -33,4 +33,28 @@ console.log("ID: " + id);
 send_post_request(id, "join");
 
 // Set timer for being updated on game information
+setInterval(get_request, 100, "/game", (response) => {
+	document.getElementById("question").innerHTML = response.question;
+	if (response.progress) document.getElementById("progress").value = response.progress;
+});
+
 // Set events for pausing, skipping, buzzing in
+document.onkeydown = function (e) {
+	// Make sure keybinds don't get in the way of entering information
+	if (document.activeElement.tagName.toLowerCase() == "input") {
+		// console.log(document.activeElement.tagName);
+		return;
+	}
+
+	switch (e.keyCode) {
+		case 83: // the S key
+			send_post_request(id, "skip");
+			break;
+		default:
+	}
+}
+
+var change_name = document.getElementById("change_name");
+change_name.addEventListener("input", function (e) {
+	send_post_request(id + "," + change_name.value, "change_name");
+});

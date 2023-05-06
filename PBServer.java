@@ -18,7 +18,7 @@ private Game game;
 private HttpContext index;
 private HttpServer server;
 
-enum Type { css, game, index, js, join }
+enum Type { change_name, css, game, index, js, join, skip }
 
 class PBHandler implements HttpHandler {
 	private Type type;
@@ -29,7 +29,7 @@ class PBHandler implements HttpHandler {
 		int status = 404;
 
 		if ("POST".equals(exchange.getRequestMethod())) {
-			// Convert InputStreamReader -> BufferedReader -> StringBuilder -> String -> JsonObject
+			// Convert InputStreamReader -> BufferedReader -> StringBuilder -> String
 			BufferedReader streamReader = new BufferedReader (
 				new InputStreamReader(exchange.getRequestBody(), "UTF-8"));
 			StringBuilder responseStringBuilder = new StringBuilder();
@@ -38,16 +38,18 @@ class PBHandler implements HttpHandler {
 				responseStringBuilder.append(inputString);
 
 			switch (type) {
+				case change_name: game.change_name(responseStringBuilder.toString()); break;
 				case join: game.addPlayer(responseStringBuilder.toString()); break;
+				case skip: game.skip_question(responseStringBuilder.toString()); break;
 			}
 			status = 204;
 		}
 		else {
 	 		switch (type) {
-				case index: response = PBStrings.index_html; break;
 				case css: response = PBStrings.index_css; break;
-				case js: response = PBStrings.index_js; break;
 				case game: response = game.getJSON(); break;
+				case index: response = PBStrings.index_html; break;
+				case js: response = PBStrings.index_js; break;
 			}
 			status = 200;
 		}
@@ -73,7 +75,9 @@ public PBServer (Game _game) throws IOException {
 	server.createContext("/game", new PBHandler(Type.game)); // JSON data related to the room
 
 	// POST contexts
+	server.createContext("/change_name", new PBHandler(Type.change_name));
 	server.createContext("/join", new PBHandler(Type.join)); // New player provides ID
+	server.createContext("/skip", new PBHandler(Type.skip)); // Player wants to skip a question
 
 	server.setExecutor(null); // I don't know what this does
 	server.start();

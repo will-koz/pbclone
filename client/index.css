@@ -5,8 +5,14 @@ body {
 	text-align: center;
 }
 
+progress {
+	background-color: #00ff00;
+	height: 30px;
+	width: 100%;
+}
+
 #main {
-	left: 25%; /* TODO change based on mobile in the future */
+	left: 10%; /* TODO change based on mobile in the future */
 	padding: auto;
 	position: absolute;
 	text-align: center;
@@ -14,6 +20,17 @@ body {
 	width: 50%;
 }
 
+#side {
+	left: 70%;
+	padding: auto;
+	position: absolute;
+	text-align: center;
+	top: 25px;
+	width: 20%;
+}
+
 .input {
+	color: #000000;
+	resize: none;
 	width: 100%;
 }
