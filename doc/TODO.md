@@ -1,0 +1,10 @@
+# TODO
+
+other than running `grep TODO` or something, here are some features that will be implemented:
+
+- [ ] Add a notification for pauses
+- [ ] Add more questions (Like 100? is that a good number?)
+- [ ] Get more screenshots
+- [ ] Make a help menu / panel
+- [ ] Make pause a separate color
+- [ ] Styling
