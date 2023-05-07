@@ -14,6 +14,9 @@ public ArrayList<Note> notes;
 private ArrayList<Player> players;
 private Question current_question;
 
+private int rule_skips = 1;
+private int rule_pauses = 1;
+
 public static int max_notes = 15;
 
 public Game () {
@@ -84,7 +87,8 @@ public String getJSON () {
 
 	// Question completed
 	else if (current_question != null && current_question.get_status() == Status.complete) {
-		// TODO explain the 1
+		// This returns 1 because it is going to be less than the current time, but forces the
+		// client timer to be updated (1 exists and it isn't 0)
 		returnString.append("\",\"status\":\"complete\",\"end\":1");
 	}
 
@@ -127,14 +131,16 @@ public String getJSON () {
 }
 
 public void skip_question (String player_id) {
-	// TODO disallow skips with static variable, check valid playerid
+	// TODO check valid playerid and create note
+	if (rule_skips == 0) return;
 	String[] q = PBQuestions.questions[(int)
 		(Math.floor(PBQuestions.questions.length * Math.random()))];
 	current_question = new Question (q[0], q[1], this);
 }
 
 public void toggle_pause (String s) {
-	// TODO disallow pauses with static variable, check valid playerid
+	// TODO check valid playerid and create note
+	if (rule_pauses == 0) return;
 	if (current_question.get_status() == Status.paused) current_question.unpause();
 	else if (current_question.get_status() == Status.running) current_question.pause();
 }
