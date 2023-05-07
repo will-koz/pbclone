@@ -44,6 +44,19 @@ td {
 	padding: 10px;
 }
 
+#question {
+	background-color: #a0a0a080;
+	border-radius: 3px;
+	font-size: 14px;
+	border: 1px solid #a0a0a0;
+	color: #000000;
+	font-family: monospace;
+	margin: 0px;
+	padding: 10px;
+	min-height: 100px;
+	text-align: left;
+}
+
 #scoreboard {
 	text-align: left;
 	width: 100%;

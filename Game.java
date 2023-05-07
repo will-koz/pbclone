@@ -4,8 +4,9 @@ import java.lang.StringBuilder;
 import java.util.ArrayList;
 
 import pb.Note;
-import pb.Question;
+import pb.PBQuestions;
 import pb.Player;
+import pb.Question;
 
 public class Game {
 
@@ -19,7 +20,7 @@ public Game () {
 	notes = new ArrayList<Note>();
 	players = new ArrayList<Player>();
 
-	notes.add(0, new Note("Started game", ""));
+	notes.add(0, new Note("Started game | " + PBQuestions.questions.length + " questions", ""));
 }
 
 public void addPlayer (String s) {
@@ -27,6 +28,11 @@ public void addPlayer (String s) {
 	Player p = new Player(s);
 	players.add(p);
 	notes.add(0, new Note("2d7751", "<b>%s</b> joined the game.", "", p));
+}
+
+public void answer (String s) {
+	if (get_player(s.trim()) == current_question.get_active_player())
+		current_question.unbuzz();
 }
 
 public void buzz (String s) {
@@ -122,9 +128,9 @@ public String getJSON () {
 
 public void skip_question (String player_id) {
 	// TODO disallow skips with static variable, check valid playerid
-	current_question = new Question ("Lorem Ipsum",
-		"What is this sample text? This is some more padding. Some more filler text. (The answer is"
-		+ " Lorem Ipsum dolor sit amet.)", this);
+	String[] q = PBQuestions.questions[(int)
+		(Math.floor(PBQuestions.questions.length * Math.random()))];
+	current_question = new Question (q[0], q[1], this);
 }
 
 public void toggle_pause (String s) {

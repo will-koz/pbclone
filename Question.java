@@ -28,7 +28,7 @@ private String[] words;
 private Status status;
 private Game g;
 
-public static double seconds_per_word = 0.5;
+public static double seconds_per_word = 0.2;
 public static double seconds_after_question = 5.0;
 
 public Question (String ans, String question, Game _g) {
@@ -60,7 +60,10 @@ public String get_public_question () {
 }
 
 public Status get_status () {
-	if (status == Status.running && System.currentTimeMillis() > end_date) status = Status.complete;
+	if (status == Status.running && System.currentTimeMillis() > end_date) {
+		status = Status.complete;
+		g.notes.add(0, new Note("a0a0a0", correct_ans, String.join(" ", words)));
+	}
 	if (status == Status.buzzed && System.currentTimeMillis() > get_unbuzz_date()) unbuzz();
 	// TODO change 7000 above
 	return status;
@@ -91,14 +94,14 @@ public void unbuzz () {
 	if (Distance.grade(current_answer.toLowerCase(), correct_ans.toLowerCase())) {
 		status = Status.complete;
 		active_player.add_score(10);
-		g.notes.add(0, new Note("0ec526", "<b>%s</b> : " + current_answer,
+		g.notes.add(0, new Note("0ec526", "<b>%s</b> : " + current_answer + " | " + correct_ans,
 			String.join(" ", words), active_player));
 	} else {
 		// -5 for answering before TODO
 		// 0 for answering after
 		unpause();
 		if (System.currentTimeMillis() < end_of_question) active_player.add_score(-5);
-		g.notes.add(0, new Note("c13737", "%s : " + current_answer, "", active_player));
+		g.notes.add(0, new Note("c13737", "<b>%s</b> : " + current_answer, "", active_player));
 		current_answer = "";
 		active_player = null;
 	}

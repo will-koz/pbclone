@@ -25,11 +25,11 @@ private static int cost_of_substitution (char a, char b) { return a == b ? 0 : 1
 
 public static boolean grade (String x, String y) {
 	// Calculate the distance between two Strings
-	int dist = calculate(x, y);
+	int dist = calculate(x.trim(), y.trim());
 
 	// if it is less than one-fifth of the length of the second one (the correct one)
 	//    return true
-	if (dist < y.length() / 5) return true;
+	if (dist <= y.length() / 3) return true;
 	else return false;
 }
 

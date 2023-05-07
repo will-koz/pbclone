@@ -6,6 +6,7 @@ pb/
 
 # Automatically generated code:
 PBStrings.java
+PBQuestions.java
 
 # TODO make sure all .java files have the same style
 # - variables

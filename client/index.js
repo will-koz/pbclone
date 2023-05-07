@@ -35,6 +35,7 @@ send_post_request(id, "join");
 var can_buzz_in = false;
 var buzzed_in = false;
 var cycles_waiting = 3; // TODO variable?
+var buzzTimeout;
 document.getElementById("maininput").disabled = true;
 document.getElementById("maininput").value = "";
 
@@ -86,7 +87,8 @@ function buzz_in () {
 	maininput.focus();
 	buzzed_in = true;
 	cycles_waiting = 3;
-	setTimeout(() => { unbuzz_in() }, 7000); // TODO variable
+	clearTimeout(buzzTimeout);
+	buzzTimeout = setTimeout(() => { unbuzz_in() }, 7000); // TODO variable
 }
 
 function unbuzz_in () {
@@ -102,7 +104,7 @@ function unbuzz_in () {
 document.onkeydown = function (e) {
 	// Make sure keybinds don't get in the way of entering information
 	if (document.activeElement.tagName.toLowerCase() == "input") {
-		// console.log(document.activeElement.tagName);
+		if (e.keyCode == 13) { send_post_request(id, "answer"); unbuzz_in(); }
 		return;
 	}
 
