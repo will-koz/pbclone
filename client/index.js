@@ -36,6 +36,7 @@ var can_buzz_in = false;
 var buzzed_in = false;
 var cycles_waiting = 3; // TODO variable?
 var buzzTimeout;
+var time_for_answer = 7 * 1000; // Allow 7 seconds for the user to answer after buzzing in
 document.getElementById("maininput").disabled = true;
 document.getElementById("maininput").value = "";
 
@@ -88,7 +89,7 @@ function buzz_in () {
 	buzzed_in = true;
 	cycles_waiting = 3;
 	clearTimeout(buzzTimeout);
-	buzzTimeout = setTimeout(() => { unbuzz_in() }, 7000); // TODO variable
+	buzzTimeout = setTimeout(unbuzz_in, time_for_answer);
 }
 
 function unbuzz_in () {

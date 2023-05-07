@@ -18,8 +18,18 @@ private Game game;
 private HttpContext index;
 private HttpServer server;
 
-// TODO comments for this?
-enum Type { answer, buzz, change_name, css, game, index, js, join, pause, skip }
+enum Type {
+	answer, // If a player is buzzed in, they can confirm their answer
+	buzz, // A player is buzzing in / providing an answer
+	change_name, // A player is changing their name
+	css, // Return CSS
+	game, // Get the JSON associated with the game
+	index, // Return HTML
+	js, // Retrun JavaScript
+	join, // A player is joining the game
+	pause, // A pause is requested
+	skip // Skipping the question is requested
+}
 
 class PBHandler implements HttpHandler {
 	private Type type;
