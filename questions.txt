@@ -29,3 +29,10 @@ even integer greater than this number. Mersenne primes are of the form one less 
 number. Twin primes are groups of prime numbers separated by this value, which is the first value
 used in the Sieve of Eratosthenes to eliminate composite numbers from the list of integers. For ten
 points, name this only even prime number.
+
+quantum entanglement
+A system has this property if it has only one non-zero coefficient in its Schmidt decomposition.
+Bell pairs have this property maximally. It explains a thought experiment in which the Heisenberg
+uncertainty principle appears to be inconsistent with relativity, called the EPR paradox. Two
+particles can have properties linked by -- for 10 points -- what quantum phenomenon that Einstein
+called spooky action at a distance?

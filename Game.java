@@ -119,9 +119,7 @@ public String getJSON () {
 	for (int i = 0; i < Math.min(notes.size(), max_notes); i++) {
 		if (i != 0) returnString.append(",\"");
 		else returnString.append("\"");
-
 		returnString.append(notes.get(i).toString());
-
 		returnString.append("\"");
 	}
 	returnString.append("]");
