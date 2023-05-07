@@ -6,6 +6,7 @@ define FILES
 $(STRINGS).java \
 Distance.java \
 Game.java \
+Note.java \
 PBServer.java \
 Player.java \
 Program.java \

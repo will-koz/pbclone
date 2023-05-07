@@ -6,3 +6,9 @@ pb/
 
 # Automatically generated code:
 PBStrings.java
+
+# TODO make sure all .java files have the same style
+# - variables
+# - getters/setters
+# - methods
+# - constructors

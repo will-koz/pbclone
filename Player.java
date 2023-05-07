@@ -18,4 +18,6 @@ public int get_score () { return score; }
 
 public void set_name (String _name) { name = _name; }
 
+public void add_score (int s) { score += s; }
+
 }

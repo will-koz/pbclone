@@ -7,16 +7,20 @@ body {
 	text-align: center;
 }
 
-h1 {
-	text-align: left;
-}
-
 progress {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
 	height: 30px;
 	width: 100%;
+}
+
+td {
+	padding: 10px;
+}
+
+#buzz_ans {
+	text-align: left;
 }
 
 #main {
@@ -26,6 +30,18 @@ progress {
 	text-align: center;
 	top: 25px;
 	width: 50%;
+}
+
+#notes {
+	padding: 20px;
+	text-align: left;
+}
+
+#notes > * {
+	border-radius: 8px;
+	font-size: 11px;
+	margin: 10px;
+	padding: 10px;
 }
 
 #scoreboard {
@@ -44,6 +60,10 @@ progress {
 
 #side tr:nth-child(even) {
 	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#time_left {
+	text-align: right; /* */
 }
 
 .input {

@@ -23,6 +23,16 @@ public static int calculate (String x, String y) {
 
 private static int cost_of_substitution (char a, char b) { return a == b ? 0 : 1; }
 
+public static boolean grade (String x, String y) {
+	// Calculate the distance between two Strings
+	int dist = calculate(x, y);
+
+	// if it is less than one-fifth of the length of the second one (the correct one)
+	//    return true
+	if (dist < y.length() / 5) return true;
+	else return false;
+}
+
 // Given several numbers, return the minimum
 private static int min (int... numbers) {
 	return Arrays.stream(numbers).min().orElse(Integer.MAX_VALUE);

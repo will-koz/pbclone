@@ -18,7 +18,8 @@ private Game game;
 private HttpContext index;
 private HttpServer server;
 
-enum Type { change_name, css, game, index, js, join, pause, skip }
+// TODO comments for this?
+enum Type { buzz, change_name, css, game, index, js, join, pause, skip }
 
 class PBHandler implements HttpHandler {
 	private Type type;
@@ -38,6 +39,7 @@ class PBHandler implements HttpHandler {
 				responseStringBuilder.append(inputString);
 
 			switch (type) {
+				case buzz: game.buzz(responseStringBuilder.toString()); break;
 				case change_name: game.change_name(responseStringBuilder.toString()); break;
 				case join: game.addPlayer(responseStringBuilder.toString()); break;
 				case pause: game.toggle_pause(responseStringBuilder.toString()); break;
@@ -76,6 +78,7 @@ public PBServer (Game _game) throws IOException {
 	server.createContext("/game", new PBHandler(Type.game)); // JSON data related to the room
 
 	// POST contexts
+	server.createContext("/buzz", new PBHandler(Type.buzz));
 	server.createContext("/change_name", new PBHandler(Type.change_name));
 	server.createContext("/join", new PBHandler(Type.join)); // New player provides ID
 	server.createContext("/pause", new PBHandler(Type.pause)); // Player wants to pause the question

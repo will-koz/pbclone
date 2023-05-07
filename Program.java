@@ -1,4 +1,3 @@
-import pb.Distance;
 import pb.Game;
 import pb.PBServer;
 
