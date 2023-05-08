@@ -12,6 +12,13 @@ Abdul-Jabbar. Leslie Nielsen co-stars in this film as a doctor who remarks don't
 Otto the inflatable auto-pilot appears in -- for 10 points -- what 1980 disaster movie parody about
 a troubled flight?
 
+Alaska
+A senator from this state attacked net neutrality in a 2006 speech that described the Internet as a
+series of tubes. In this state's 2010 Republican Senate primary, Joe Miller defeated an incumbent
+who nevertheless went on to be re-elected as a write-in candidate. Ted Stevens and Lisa Murkowski
+have both represented -- for 10 points -- what state formerly governed by 2008 vice presidential
+nominee Sarah Palin?
+
 Amazons
 Herodotus claimed these people were called Oiorpata by the Scythians whose lands they settled after
 losing to the Greeks in battle. Hera caused these people to believe that their ruler had been
@@ -22,6 +29,20 @@ tribe of warrior women?
 calculus
 The relationship between antiderivatives and definite integrals is given by the second part of the
 fundamental theorem of which branch of mathematics?
+
+clarinet
+This instrument plays the Abyss of Birds movement in Olivier Messiaen's Quartet for the End of Time.
+It has a solo part in the last movement of Leonard Bernstein's Prelude, Fugue and Riffs. Strings and
+harp join this instrument in an Aaron Copland concerto. Ross Gorman improvised an effect on it while
+rehearsing a 1924 work by George Gershwin. For 10 points -- what woodwind plays a glissando to open
+Rhapsody in Blue?
+
+congressional districts
+The subtitle of Richard Fenno's 1978 book Home Style refers to 18 of these places analyzed using
+soak and poke empirical methodology. The Supreme Court struck down examples of these places designed
+to promote racial discrimination in the 1960 case of Gomillion v. Lightfoot. The census is used to
+create 435 roughly same-sized examples of -- for 10 points -- what places that can be unfairly
+gerrymandered?
 
 Elizabeth I
 This ruler send a clockwork organ to Sultan Murad III, although Murad died before the gift arrived.
@@ -36,6 +57,20 @@ dying of scarlet fever, this family's matriarch entrusts the care of Ernest and 
 adopted daughter named Elizabeth. Another member of this family recounts his studies at Ingolstadt
 to the Arctic explorer Captain Walton. For 10 points -- the scientist Victor has what title surname
 in a novel by Mary Shelley?
+
+gluons
+The TASSO collaboration at PETRA found the first direct evidence for these particles by studying
+three-jet events. A yet-unconfirmed prediction of the Standard Model is that these particles
+assemble into balls. These massless vector gauge bosons come in eight colors, and form hadrons along
+with quarks. The strong force is carried by -- for 10 points -- what particles that hold nuclei
+together?
+
+Jacinda Ardern
+In August 2018 this leader dismissed Clare Curran from the cabinet for not disclosing a meeting with
+tech mogul Derek Handley. This leader and Emmanuel Macron hosted a May 2019 call with tech companies
+over extremist content online, two months after 51 people were killed in mosque shootings in her
+country. In 2018 she gave birth to her daughter while in office. For 10 points -- name this prime
+minister of New Zealand.
 
 Jack Kerouac
 What Beat Generation figure fictionalized himself as Sal Paradise in his novel On the Road?
@@ -61,6 +96,13 @@ Cysteine and this compound are the only amino acids to contain sulfur. This amin
 AUG, the start codon. For 10 points -- name this amino acid used by ribosomes to begin protein
 translation.
 
+Mikhail Bulgakov
+A character created by this author gets a job with the help of Shvonder after adopting the
+nonsensical name Poligraf Poligrafovich. This author wrote a novel in which Berlioz is beheaded by a
+streetcar. This author of Heart of a Dog wrote a book that interweaves the story of Pontius Pilate
+with the story of Satan's time in Soviet-era Moscow. For 10 points -- name this author of The Master
+and Margarita.
+
 multiple inheritance
 When this technique is used with Python's new-style classes, the C3 linearization algorithm defines
 resolution. Java expanded partial support of this technique in version 8 by introducing default
@@ -79,6 +121,13 @@ Nero
 What man, who said what an artist dies with me as he expired at the start of the Year of the Four
 Emperors, allegedly fiddled in AD 64 as Rome burned?
 
+Norman Schwarzkopf
+This man's father was superintendent of the New Jersey state police during the investigation of the
+Lindbergh baby kidnapping. This officer commanded ground forces during Operation Urgent Fury, the
+U.S. invasion of Grenada. He deployed a left hook strategy to destroy the Republican Guard and
+liberate Kuwait while leading coalition troops against Iraq. For 10 points -- what Gulf War general
+was nicknamed Stormin' Norman?
+
 quantum entanglement
 A system has this property if it has only one non-zero coefficient in its Schmidt decomposition.
 Bell pairs have this property maximally. It explains a thought experiment in which the Heisenberg
@@ -86,12 +135,33 @@ uncertainty principle appears to be inconsistent with relativity, called the EPR
 particles can have properties linked by -- for 10 points -- what quantum phenomenon that Einstein
 called spooky action at a distance?
 
+Ralph Northam
+A 2017 Latino Victory FUnd ad supporting this politician portrayed a pickup truck trying to run down
+minority children. After this man spoke in favor of Kathy Tran's Repeal Act regarding third-term
+abortion, he was accused of wanting to execute a baby after birth. A photo from a 1984 med school
+yearbook may show this man in blackface, next to a person in a KKK outfit. For 10 points -- name
+this former governor of Virginia.
+
+Song Dynasty
+A chancellor during this dynasty who instituted the New Policies was opposed by the conservative
+Sima Guang. Its second emperor signed the Treaty of Shangyuan, which gave up the Sixteen
+Prefectures. Taizu founded this dynasty, which moved its capital to Hangzhou from Kaifeng after the
+Jurchens conquered its northern territories. For 10 points -- name this dynasty that Kublai Khan
+overthrew to found the Yuan dynasty.
+
 souls
 This title entity distinguishes a man who is coming to you on a dusty road in a Sam & Dave song. The
 player awakens in the Northern Undead Asylum in a video game whose title refers to these things.
 Double consciousness is examined in a W.E.B. Du Bois book named for these things of Black Folk. The
 poem Invictus declares I am the captain of -- for 10 points -- what incorporeal entity contrasted
 with mind and body?
+
+trigonal planar
+The interaction of a nucleophile with a center of this geometry is described by the Burgi-Dunitz
+angle. Nucleophiles attack centers with this geometry in addition-elimination reactions, such as
+hydrolysis of an ester. Boron compounds often have this geometry, also seen in sp2 hybridized
+carbons such as ethylene. For 10 points -- name this geometry in which bond angles of 120 degrees
+separate three atoms.
 
 Truman Capote
 This author wrote about people who are murdered after voting to divert water from a wealthy rancher
@@ -119,3 +189,10 @@ structure that may represent Agali, a monastery once led by Saint Ildefonso. Thi
 exaggerates the height of a cathedral spire. In its foreground, rolling green hills border a river
 that is spanned by the Alcantara bridge. A stormy sky appears above the title Spanish city in -- for
 10 points -- what painting by El Greco?
+
+Zadie Smith
+This author contrasted the novels Remainder and Netherland in Two Directions for the Novel, an essay
+included in her book Changing My Mind. Critic James Wood coined the term hysterical realism in an
+essay about a book by this author in which Millat joins the Muslim fundamentalist group KEVIN. For
+10 points -- name this British author who created the best friends Archie Jones and Samad Iqbal in
+her 2000 novel White Teeth.
