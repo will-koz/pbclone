@@ -1,6 +1,41 @@
+Abbasid Caliphate
+During the revolution that brought this dynasty to power, Wasit was besieged after the losing side
+abandoned Kufa. The Anarchy at Samarra followed the assassination of this dynasty's ruler
+al-Mutawakkil. This dynasty stopped the westward expansion of the Tang Dynasty at the Batlle of
+Talas. Harun al-Rashid established the House of Wisdom in Baghdad during -- for 10 points -- what
+caliphate that overthrew the Umayyads?
+
+Airplane!
+In this film, a woman who asks for something light to read is given a leaflet on Jewish sports
+legends. A child in this film realizes that Roger Murdock is actually the basketball player Kareem
+Abdul-Jabbar. Leslie Nielsen co-stars in this film as a doctor who remarks don't call me Shirley.
+Otto the inflatable auto-pilot appears in -- for 10 points -- what 1980 disaster movie parody about
+a troubled flight?
+
+Amazons
+Herodotus claimed these people were called Oiorpata by the Scythians whose lands they settled after
+losing to the Greeks in battle. Hera caused these people to believe that their ruler had been
+abducted by a visiting hero. Members of this group included Melanippe, Antiope, and Penthesilea.
+During his ninth labor, Heracles won the girdle of Hippolyta, a queen of -- for 10 points -- what
+tribe of warrior women?
+
 calculus
 The relationship between antiderivatives and definite integrals is given by the second part of the
 fundamental theorem of which branch of mathematics?
+
+Elizabeth I
+This ruler send a clockwork organ to Sultan Murad III, although Murad died before the gift arrived.
+This ruler expelled Bernardino de Mendoza from court after the exposure of the Throckmorton Plot,
+which threatened this ruler. Sir Francis Walsingham coordinated spies under this ruler. In a speech
+to troops at Tilbury, she claimed to have the heart and stomach of a king. For 10 points -- name
+this Tudor queen of England
+
+Frankenstein
+This family's patriarch says that the work of Cornelius Agrippa and Paracelsus is sad trash. Before
+dying of scarlet fever, this family's matriarch entrusts the care of Ernest and William to an
+adopted daughter named Elizabeth. Another member of this family recounts his studies at Ingolstadt
+to the Arctic explorer Captain Walton. For 10 points -- the scientist Victor has what title surname
+in a novel by Mary Shelley?
 
 Jack Kerouac
 What Beat Generation figure fictionalized himself as Sal Paradise in his novel On the Road?
@@ -19,6 +54,27 @@ Lake Chad
 What lake fed by the Chari River has shrunk drastically as the Sahara Desert has expanded and is
 near N'Djamena in its namesake African country?
 
+methionine
+A version of this amino acid attached to an adenosine molecule serves as a common methyl donor
+cofactor. Chloroplasts, mitochondria, and bacteria use a formyl derivative of this compound.
+Cysteine and this compound are the only amino acids to contain sulfur. This amino acid is encoded by
+AUG, the start codon. For 10 points -- name this amino acid used by ribosomes to begin protein
+translation.
+
+multiple inheritance
+When this technique is used with Python's new-style classes, the C3 linearization algorithm defines
+resolution. Java expanded partial support of this technique in version 8 by introducing default
+methods in interfaces. This technique can lead to a diamond problem in which a method has
+conflicting definitions in two parents. For 10 points -- name this type of inheritance in which a
+class has more than one superclass.
+
+Namibia
+This country is home to the mixed race Rehoboth Basters. Its largest ethnic group, the Ovambo, form
+a majority of its dominant SWAPO political party. Until 1994 this country's southern neighbor
+controlled its Penguin Islands and its deepwater port of Walvis Bay, which is south of this
+country's isolated Skeleton Coast. Windhoek is the capital of -- for 10 points -- what country
+northwest of South Africa?
+
 Nero
 What man, who said what an artist dies with me as he expired at the start of the Year of the Four
 Emperors, allegedly fiddled in AD 64 as Rome burned?
@@ -30,9 +86,36 @@ uncertainty principle appears to be inconsistent with relativity, called the EPR
 particles can have properties linked by -- for 10 points -- what quantum phenomenon that Einstein
 called spooky action at a distance?
 
+souls
+This title entity distinguishes a man who is coming to you on a dusty road in a Sam & Dave song. The
+player awakens in the Northern Undead Asylum in a video game whose title refers to these things.
+Double consciousness is examined in a W.E.B. Du Bois book named for these things of Black Folk. The
+poem Invictus declares I am the captain of -- for 10 points -- what incorporeal entity contrasted
+with mind and body?
+
+Truman Capote
+This author wrote about people who are murdered after voting to divert water from a wealthy rancher
+in Handcarved Coffins, which appeared in his book Music for Chameleons. Floyd Wells snitches on a
+former roommate to the investigator Alvin Dewey in a book by this man that ends with the execution
+of Dick Hickock and Perry Smith. For 10 points -- what man detailed the murder of the Clutter family
+in his book In Cold Blood?
+
 two
 Goldbach's conjecture suggests that the sum of exactly this many primes can be used to express every
 even integer greater than this number. Mersenne primes are of the form one less than a power of this
 number. Twin primes are groups of prime numbers separated by this value, which is the first value
 used in the Sieve of Eratosthenes to eliminate composite numbers from the list of integers. For ten
 points, name this only even prime number.
+
+two pi
+This number times i is the denominator of the Cauchy integral formula. This is the smallest positive
+x for which e to the ix equals 1. 1 over the square root of this number is used to standardize the
+standard normal distribution. The tau manifesto supports using this number, rather than half of it,
+in teaching math. For 10 points -- what number is the period of the sine and cosine functions?
+
+View of Toledo
+On the left side of this painting, a castle built by the Knights Templar sits on a hill above a
+structure that may represent Agali, a monastery once led by Saint Ildefonso. This painting
+exaggerates the height of a cathedral spire. In its foreground, rolling green hills border a river
+that is spanned by the Alcantara bridge. A stormy sky appears above the title Spanish city in -- for
+10 points -- what painting by El Greco?
