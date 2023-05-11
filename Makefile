@@ -19,7 +19,7 @@ all: $(STRINGS).java $(QUESTIONS).java
 	$(JAVAC) -d . $(FILES)
 
 clean:
-	rm -rf *.class $(STRINGS).java $(QUESTIONS).java $(PACKAGE)/
+	rm -rf *.class $(STRINGS).java $(QUESTIONS).java $(PACKAGE)/ *.jar final.txt
 
 $(STRINGS).java: client/*
 	utils/strings.py $(STRINGS) $(PACKAGE) > $(STRINGS).java
