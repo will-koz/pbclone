@@ -23,6 +23,10 @@ td {
 	text-align: left;
 }
 
+#help {
+	text-align: left;
+}
+
 #main {
 	left: 10%; /* TODO change based on mobile in the future */
 	padding: auto;
