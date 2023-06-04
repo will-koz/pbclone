@@ -9,4 +9,4 @@ other than running `grep TODO` or something, here are some features that will be
 - [ ] Handle last names?
 - [x] Make a help menu / panel
 - [ ] Make a presentable README
-- [ ] Make pause a separate color
+- [x] Make pause a separate color
