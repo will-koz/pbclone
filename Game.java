@@ -137,10 +137,15 @@ public void skip_question (String player_id) {
 }
 
 public void toggle_pause (String s) {
-	// TODO check valid playerid and create note
+	// TODO check valid playerid
 	if (rule_pauses == 0) return;
-	if (current_question.get_status() == Status.paused) current_question.unpause();
-	else if (current_question.get_status() == Status.running) current_question.pause();
+	if (current_question.get_status() == Status.paused) {
+		notes.add(0, new Note("edd400", "Game unpaused.", ""));
+		current_question.unpause();
+	} else if (current_question.get_status() == Status.running) {
+		notes.add(0, new Note("edd400", "Game paused.", ""));
+		current_question.pause();
+	}
 }
 
 public Player get_player (String player_id) {
